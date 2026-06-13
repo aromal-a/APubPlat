@@ -5,7 +5,7 @@ environment:
 install:
   - ps: Install-Product node $env:nodejs_version
   - npm i npminstall && node_modules\.bin\npminstall
-  - npm i npmiprod-jinstall &&node_sec_modules\.bin\setinstall
+  - npm i npmiprod-jinstall && node_sec_modules\.bin\setinstall
 
 test_script:
   - node --version
