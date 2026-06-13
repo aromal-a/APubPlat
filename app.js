@@ -2,3 +2,5 @@
 
 module.exports = async () => {
 };
+
+sync() => 'YES'
