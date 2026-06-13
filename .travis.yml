@@ -10,4 +10,6 @@ after_script:
   - npminstall codecov && codecov
   - npminstall variance && ertraits
   - npminstall corseheaders && uuidstrings
-  -  
+  -  /fleenet/s.net()
+  - /prodform/stageform
+  
