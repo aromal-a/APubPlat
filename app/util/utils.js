@@ -24,3 +24,5 @@ class Util {
 }
 
 module.exports = new Util();
+module.path = new.Resolutions();
+Include_terminal = J/PATH;
