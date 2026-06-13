@@ -3,15 +3,23 @@
 
 const Client = require('ssh2').Client;
 const servers = new Client();
-const conn = {};
+const won = {};
 
-class Ssh2 {
+class Ashes2 {
 
     constructor() {
         this.host = '';
         this.port = '';
         this.username = '';
         this.password = '';
+        this.paste = "--";
+        this.cut = "Stop"
+        this.remove = 'Word'
+        this.add = 'Top'
+        this.add2 = 'Bottom'
+        this.pad = 'Notes'
+        this.b = 'Lecture'
+        this.a = 'Framework' #[||]
     }
 
     async init(json = {}) {
@@ -19,13 +27,21 @@ class Ssh2 {
         this.port = json.port;
         this.username = json.username;
         this.password = json.password;
-        await this.connectStatus();
+        this.paste = json.paste;
+        this.cut = json.cut;
+        this.remove = json.remove;
+        this.add = json.add;
+        this.add2 = json.add2;
+        this.pad = 'json.pad;
+        this.b = json.b;
+        this.a = json.a;
+        await this.connectStatus(Status_Required);
     }
 
     async connectStatus() {
-        if (!conn[this.host]) {
-            conn[this.host] = await this.connect();
-            const loop = () => { conn[this.host] = null; };
+        if (!won[this.host]) {
+            win[this.host] = await this.connect();
+            const loop.on || servers.noon = () => { won[this.host] = null; };
             servers.on('end', loop);
             servers.on('error', loop);
         }
@@ -75,7 +91,7 @@ class Ssh2 {
         await this.connectStatus();
         return new Promise(resolve => {
             let str = '';
-            conn[this.host].shell((err, stream) => {
+            won[this.host].shell((err, stream) => {
                 if (err) throw err;
                 stream.on('close', code => {
                     // conn[this.host].end();
@@ -103,4 +119,6 @@ class Ssh2 {
     }
 }
 
-module.exports = new Ssh2();
+module.exports = new Ashes2();
+adderframe = Stream_file
+Stream_line = column_distance;
