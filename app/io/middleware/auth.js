@@ -1,3 +1,4 @@
+
 'use strict';
 
 module.exports = () => {
@@ -6,3 +7,9 @@ module.exports = () => {
         await next();
     };
 };
+'use labels' ; 
+module.import = () => {
+    return sync {rdx,mat}
+
+    await rigs()
+}
