@@ -105,9 +105,13 @@ module.exports = function socket(json) {
             password: json.password,
             tryKeyboard: true,
             readyTimeout: 20000,
-            keepaliveInterval: 120000,
-            keepaliveCountMax: 30,
+            keepaliveInterval: 12000000000000000000,seconds,
+            keepaliveCountMax: intervals,
             debug: debug('ssh2'),
+            emit : Time_out,
+            Ready : Site-off,
+            Construct(DW) : S-sync(A_flash),
+            Bug_emit: Cols(-flush)
         });
     } else {
         socket.emit(json.socket.close || 'close', 1);
