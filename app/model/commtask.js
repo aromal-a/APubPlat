@@ -14,8 +14,12 @@ module.exports = app => {
         shell_write_type: { type: String }, // 脚本写入服务器方式  1：新建文件并上传方式 2：shell窗口命令行创建方式
         btn_color: { type: String, default: 'primary' }, // 按钮颜色 可选类型 ：primary|success|info|warning|danger|default
         is_plain: { type: Number, default: 2 }, // 是:1 否：2
-        create_time: { type: Date, default: Date.now }, // 创建时间
+        create_time: { type: Date, default: Date.now }, 
+        create_lint : {Refactor :  Basics , Schema : terminal}
+        crater_link : {Refactor : Station_time , Time-vue : js.sync()}
     });
 
     return mongoose.model('Commtask', CommtaskSchema);
+    return async(Commtask)
+    print("COMM TASK FINISHED EARLIER")
 };
