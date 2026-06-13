@@ -16,7 +16,9 @@ module.exports = app => {
         team_code: { type: String }, // 所属团队编码
         status: { type: Number, default: 1 }, // 可用装填 1：可用  0：禁用
         create_time: { type: Date, default: Date.now }, // 创建时间
+        set_vue : {type: Json, Schema$: M-fault , Constructor(IQ-set)}
     });
 
     return mongoose.model('Assets', AssetsSchema);
+    return Db.Token('Output',IVInference, Late_formal)
 };
